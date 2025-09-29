@@ -97,10 +97,15 @@ Visualization:
 ### 🔧 Customization & Development Tips
 
 -Increase Post Limit: Adjust the limit parameter in get_reddit_posts().
+
 -Sorting Options: hot, new, top, rising.
+
 -Custom Stopwords: Add domain-specific words to the stopwords list.
+
 -Positive / Negative Word Clouds: Generate separate word clouds per sentiment.
+
 -Multi-Subreddit Comparison: Compare sentiment distribution across multiple subreddits.
+
 -Interactive Dashboard: Use Streamlit or Flask for live visualization.
 
 
