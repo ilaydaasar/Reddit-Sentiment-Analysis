@@ -92,9 +92,10 @@ Visualization:
 -Word Cloud: Highlights frequently used words after removing stopwords.
 
 ### 📊 Example Outputs
-## Ekran Görüntüsü
+
 ---
 ![pie Screenshot](plots/sentiment_pie.png)
+
 ---
 ![bar Screenshot](plots/sentiment_bar.png)
 
