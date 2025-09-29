@@ -93,7 +93,9 @@ Visualization:
 
 ### 📊 Example Outputs
 ## Ekran Görüntüsü
+---
 ![pie Screenshot](plots/sentiment_pie.png)
+---
 ![bar Screenshot](plots/sentiment_bar.png)
 
 
