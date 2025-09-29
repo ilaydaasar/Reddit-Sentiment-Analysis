@@ -62,60 +62,46 @@ Enter the subreddits to analyze, separated by commas (e.g., iPhone,Android):
 For each subreddit, the program will:
 
 -Fetch posts from Reddit
-
 -Perform sentiment analysis (positive/negative/neutral)
-
 -Save results to CSV (reddit_<subreddit>_analysis_results.csv)
-
 -Generate Pie chart and Bar chart
-
 -Generate a Word Cloud (stopwords removed)
-🔍 Data Processing & Analysis
+
+### 🔍 Data Processing & Analysis
 
 Data Collection:
 
-Hot posts are fetched using PRAW (limit adjustable).
-
-Post titles (title) are used for sentiment analysis.
+-Hot posts are fetched using PRAW (limit adjustable).
+-Post titles (title) are used for sentiment analysis.
 
 Text Preprocessing:
 
-Links and special characters are cleaned using regex.
-
-Stopwords in Turkish and English are removed.
+-Links and special characters are cleaned using regex.
+-Stopwords in Turkish and English are removed.
 
 Sentiment Analysis:
 
-HuggingFace model tabularisai/multilingual-sentiment-analysis is used.
-
-Posts longer than 512 characters are truncated for model input.
-
-Outputs include the label and confidence score for each post.
+-HuggingFace model tabularisai/multilingual-sentiment-analysis is used.
+-Posts longer than 512 characters are truncated for model input.
+-Outputs include the label and confidence score for each post.
 
 Visualization:
 
-Pie Chart: Shows percentage distribution of sentiment labels.
+-Pie Chart: Shows percentage distribution of sentiment labels.
+-Bar Chart: Shows counts of each sentiment.
+-Word Cloud: Highlights frequently used words after removing stopwords.
 
-Bar Chart: Shows counts of each sentiment.
-
-Word Cloud: Highlights frequently used words after removing stopwords.
-
-📊 Example Outputs
+### 📊 Example Outputs
 
 
-🔧 Customization & Development Tips
+### 🔧 Customization & Development Tips
 
-Increase Post Limit: Adjust the limit parameter in get_reddit_posts().
-
-Sorting Options: hot, new, top, rising.
-
-Custom Stopwords: Add domain-specific words to the stopwords list.
-
-Positive / Negative Word Clouds: Generate separate word clouds per sentiment.
-
-Multi-Subreddit Comparison: Compare sentiment distribution across multiple subreddits.
-
-Interactive Dashboard: Use Streamlit or Flask for live visualization.
+-Increase Post Limit: Adjust the limit parameter in get_reddit_posts().
+-Sorting Options: hot, new, top, rising.
+-Custom Stopwords: Add domain-specific words to the stopwords list.
+-Positive / Negative Word Clouds: Generate separate word clouds per sentiment.
+-Multi-Subreddit Comparison: Compare sentiment distribution across multiple subreddits.
+-Interactive Dashboard: Use Streamlit or Flask for live visualization.
 
 
 
